@@ -13,8 +13,6 @@ function DetailsAceptarSesion() {
     const fetchAsesor = async () => {
       try {
         const token = localStorage.getItem("token");
-        console.log(token)
-        console.log(id)
         const response = await axios.get(
           `https://great-emili-educonnect-56088bf2.koyeb.app/sesiones/${id}`,
           {
