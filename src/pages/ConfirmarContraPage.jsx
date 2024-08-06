@@ -12,7 +12,7 @@ const ConfirmarContraPage = () => {
 
   async function change() {
     try {
-      await axios.post(`https://educonnectb.onrender.com/restablecer-contrasena/${tokenRestablecimiento}`, {
+      await axios.post(`great-emili-educonnect-56088bf2.koyeb.app/restablecer-contrasena/${tokenRestablecimiento}`, {
         nuevaContrasena: contrasena,
       })
       navigate(`/login`)

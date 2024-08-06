@@ -8,7 +8,7 @@ function MembresiaDetallesPage() {
 
   const handleClickDelete = () => {
     const token = localStorage.getItem('token');
-    axios.delete("https://educonnectb.onrender.com/membresias/cancelar", {
+    axios.delete("great-emili-educonnect-56088bf2.koyeb.app/membresias/cancelar", {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -33,7 +33,7 @@ function MembresiaDetallesPage() {
     const obtenerURL = async () => {
       try {
         const response = await axios.get(
-          `https://educonnectb.onrender.com/membresias/mi-membresia/comprobante`,
+          `great-emili-educonnect-56088bf2.koyeb.app/membresias/mi-membresia/comprobante`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ function MembresiaDetallesPage() {
     const getDetalles = async () => {
       try {
         const response = await axios.get(
-          `https://educonnectb.onrender.com/membresias/mi-membresia`,
+          `great-emili-educonnect-56088bf2.koyeb.app/membresias/mi-membresia`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

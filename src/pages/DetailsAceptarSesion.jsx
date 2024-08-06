@@ -16,7 +16,7 @@ function DetailsAceptarSesion() {
         console.log(token)
         console.log(id)
         const response = await axios.get(
-          `https://educonnectb.onrender.com/sesiones/${id}`,
+          `great-emili-educonnect-56088bf2.koyeb.app/sesiones/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -35,7 +35,7 @@ function DetailsAceptarSesion() {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `https://educonnectb.onrender.com/sesiones/${id}/aceptar`,
+        `great-emili-educonnect-56088bf2.koyeb.app/sesiones/${id}/aceptar`,
         null,
         {
           headers: {
@@ -53,7 +53,7 @@ function DetailsAceptarSesion() {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `https://educonnectb.onrender.com/sesiones/${id}/rechazar`,
+        `great-emili-educonnect-56088bf2.koyeb.app/sesiones/${id}/rechazar`,
         null,
         {
           headers: {

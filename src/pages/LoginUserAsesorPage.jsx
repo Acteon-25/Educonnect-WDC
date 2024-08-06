@@ -16,7 +16,7 @@ const LoginUserAsesorPage = () => {
   const [nombre, setNombre] = useState('');
 
   const getNombre = () => {
-    axios.get("https://educonnectb.onrender.com/asesores/perfil", {
+    axios.get("great-emili-educonnect-56088bf2.koyeb.app/asesores/perfil", {
       headers: {
         'Authorization': `Bearer ${token}`
       }

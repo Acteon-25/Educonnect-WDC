@@ -13,7 +13,7 @@ const EnviarMensajeAsesor = () => {
 
   const getNombre = () => {
     const token = localStorage.getItem('token');
-    axios.get("https://educonnectb.onrender.com/asesores/perfil", {
+    axios.get("great-emili-educonnect-56088bf2.koyeb.app/asesores/perfil", {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -25,7 +25,7 @@ const EnviarMensajeAsesor = () => {
 
   const getAsesores = () => {
     const token = localStorage.getItem('token');
-    axios.get("https://educonnectb.onrender.com/asesores/estudiantes", {
+    axios.get("great-emili-educonnect-56088bf2.koyeb.app/asesores/estudiantes", {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -38,7 +38,7 @@ const EnviarMensajeAsesor = () => {
   const handleSubmit = async () => {
     const token = localStorage.getItem('token');
     try {
-      const response = await fetch('https://educonnectb.onrender.com/email/send', {
+      const response = await fetch('great-emili-educonnect-56088bf2.koyeb.app/email/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',

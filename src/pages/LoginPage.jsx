@@ -19,13 +19,13 @@ const LoginPage = () => {
         contrasena: contrasena,
       }
 
-      const response = await axios.post('https://educonnectb.onrender.com/login', details);
+      const response = await axios.post('great-emili-educonnect-56088bf2.koyeb.app/login', details);
       const token = response.data.token;
       const tipoUsuario = response.data.tipoUsuario;
       localStorage.setItem('token', token);
 
       if (tipoUsuario == "ESTUDIANTE") {
-        const resEstudiante = await axios.get("https://educonnectb.onrender.com/estudiantes/perfil", {
+        const resEstudiante = await axios.get("great-emili-educonnect-56088bf2.koyeb.app/estudiantes/perfil", {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -39,7 +39,7 @@ const LoginPage = () => {
 
       } else if (tipoUsuario == "ASESOR") {
 
-        const resAsesor = await axios.get("https://educonnectb.onrender.com/asesores/perfil", {
+        const resAsesor = await axios.get("great-emili-educonnect-56088bf2.koyeb.app/asesores/perfil", {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -68,7 +68,7 @@ const LoginPage = () => {
   return (
     <>
       <Header />
-      <SectionContainer className="grid sm:grid-cols-2  sm:py-16 p-5 lg:w-auto gap-4 place-items-center sm:my-32 md:place-items-center md:my-24 xl:my-0">
+      <SectionContainer className="grid sm:grid-cols-2 sm:py-16 p-5 lg:w-auto gap-4 place-items-center sm:my-32 md:place-items-center md:my-24 xl:my-0">
         <img src={Alumno} alt="" className="rounded-xl aspect-square sm:w-[300px] md:w-[380px] xl:w-[550px] " />
         <form onSubmit={handleSubmit}>
           <h2>Bienvenido</h2>

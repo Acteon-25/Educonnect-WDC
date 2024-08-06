@@ -14,7 +14,7 @@ function AsesorDetailsPage() {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          `https://educonnectb.onrender.com/admin/asesores/${id}`,
+          `great-emili-educonnect-56088bf2.koyeb.app/admin/asesores/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ function AsesorDetailsPage() {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `https://educonnectb.onrender.com/admin/asesores/${id}/aprobar`,
+        `great-emili-educonnect-56088bf2.koyeb.app/admin/asesores/${id}/aprobar`,
         null,
         {
           headers: {
@@ -51,7 +51,7 @@ function AsesorDetailsPage() {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `https://educonnectb.onrender.com/admin/asesores/${id}/rechazar`,
+        `great-emili-educonnect-56088bf2.koyeb.app/admin/asesores/${id}/rechazar`,
         null,
         {
           headers: {

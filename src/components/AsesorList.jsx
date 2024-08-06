@@ -9,7 +9,7 @@ function AsesorList() {
   useEffect(() => {
     const fetchAsesores = async () => {
       try {
-        const response = await axios.get('https://educonnectb.onrender.com/admin/asesores/pendientes', {
+        const response = await axios.get('great-emili-educonnect-56088bf2.koyeb.app/admin/asesores/pendientes', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },

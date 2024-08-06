@@ -1,7 +1,6 @@
 if (typeof global === 'undefined') {
-    window.global = window;
-  }
-  
+  window.global = window;
+}
 
 
-  
+

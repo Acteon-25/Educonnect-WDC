@@ -12,7 +12,7 @@ const RestablecerPage = () => {
 
   async function change() {
     try {
-      const res = await axios.post(`https://educonnectb.onrender.com/restablecer-contrasena?correoElectronico=${email}`, {
+      const res = await axios.post(`great-emili-educonnect-56088bf2.koyeb.app/restablecer-contrasena?correoElectronico=${email}`, {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         }

@@ -18,7 +18,7 @@ function IngresarInformacionPage() {
     const fetchUsuarios = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await axios.get('https://educonnectb.onrender.com/asesores/estudiantes',
+        const response = await axios.get('great-emili-educonnect-56088bf2.koyeb.app/asesores/estudiantes',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -42,7 +42,7 @@ function IngresarInformacionPage() {
       const token = localStorage.getItem("token");
       const estudianteId = estudiante;
       const response = await axios.post(
-        `https://educonnectb.onrender.com/asesores/estudiantes/${estudianteId}/informes`,
+        `great-emili-educonnect-56088bf2.koyeb.app/asesores/estudiantes/${estudianteId}/informes`,
         { contenido: informe },
         {
           headers: {

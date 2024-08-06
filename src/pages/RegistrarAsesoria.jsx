@@ -28,7 +28,7 @@ function RegistrarAsesoria() {
 
     const enviarSesion = async () => {
       try {
-        await axios.post("https://educonnectb.onrender.com/sesiones/solicitar", sesion, {
+        await axios.post("great-emili-educonnect-56088bf2.koyeb.app/sesiones/solicitar", sesion, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -50,7 +50,7 @@ function RegistrarAsesoria() {
     const getAsesores = async () => {
       try {
         const response = await axios.get(
-          "https://educonnectb.onrender.com/estudiantes/asesores",
+          "great-emili-educonnect-56088bf2.koyeb.app/estudiantes/asesores",
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -20,7 +20,7 @@ function PerfilUsuario() {
         if (!token) {
           throw new Error('No hay token disponible');
         }
-        const response = await axios.get('https://educonnectb.onrender.com/estudiantes/perfil', {
+        const response = await axios.get('great-emili-educonnect-56088bf2.koyeb.app/estudiantes/perfil', {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -47,7 +47,7 @@ function PerfilUsuario() {
     event.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.put('https://educonnectb.onrender.com/estudiantes/actualizar', formData, {
+      await axios.put('great-emili-educonnect-56088bf2.koyeb.app/estudiantes/actualizar', formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }
