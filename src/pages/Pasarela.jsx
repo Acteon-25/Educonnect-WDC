@@ -24,7 +24,7 @@ function Pasarela() {
       }
     }
     try {
-      const response = await axios.post('great-emili-educonnect-56088bf2.koyeb.app/membresias/comprar', compra)
+      const response = await axios.post('https://great-emili-educonnect-56088bf2.koyeb.app/membresias/comprar', compra)
       console.log("Compra exitosa")
       const token = response.data
       localStorage.setItem('token', token)

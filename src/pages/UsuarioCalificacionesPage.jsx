@@ -12,7 +12,7 @@ function UsuarioCalificacionesPage() {
     const getCalificaciones = async () => {
       try {
         const response = await axios.get(
-          `great-emili-educonnect-56088bf2.koyeb.app/estudiantes/${id}/calificaciones`,
+          `https://great-emili-educonnect-56088bf2.koyeb.app/estudiantes/${id}/calificaciones`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

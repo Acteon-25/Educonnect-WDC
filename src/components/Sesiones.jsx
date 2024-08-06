@@ -16,13 +16,13 @@ const Sesiones = ({ userId }) => {
       try {
         let response = null;
         if (tipoUsuario === 'ESTUDIANTE') {
-          response = await axios.get(`great-emili-educonnect-56088bf2.koyeb.app/estudiantes/${userId}/sesiones`, {
+          response = await axios.get(`https://great-emili-educonnect-56088bf2.koyeb.app/estudiantes/${userId}/sesiones`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
           });
         } else if (tipoUsuario === 'ASESOR') {
-          response = await axios.get(`great-emili-educonnect-56088bf2.koyeb.app/asesores/${userId}/sesiones`, {
+          response = await axios.get(`https://great-emili-educonnect-56088bf2.koyeb.app/asesores/${userId}/sesiones`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -70,13 +70,13 @@ const Sesiones = ({ userId }) => {
   const handleDelete = async (idSesion) => {
     try {
       if (tipoUsuario === 'ESTUDIANTE') {
-        await axios.delete(`great-emili-educonnect-56088bf2.koyeb.app/estudiantes/${idSesion}`, {
+        await axios.delete(`https://great-emili-educonnect-56088bf2.koyeb.app/estudiantes/${idSesion}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
       } else if (tipoUsuario === 'ASESOR') {
-        await axios.delete(`great-emili-educonnect-56088bf2.koyeb.app/asesores/${idSesion}`, {
+        await axios.delete(`https://great-emili-educonnect-56088bf2.koyeb.app/asesores/${idSesion}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

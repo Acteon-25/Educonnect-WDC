@@ -10,7 +10,7 @@ function ArchivoAsesor({ archivo }) {
     const obtenerURL = async () => {
       try {
         const response = await axios.get(
-          `great-emili-educonnect-56088bf2.koyeb.app/admin/archivos/${archivo.id}/descargar`,
+          `https://great-emili-educonnect-56088bf2.koyeb.app/admin/archivos/${archivo.id}/descargar`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

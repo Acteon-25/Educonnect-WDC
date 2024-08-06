@@ -31,7 +31,7 @@ function Disponibilidad() {
 
     const getHorarios = async () => {
       const response = await axios.get(
-        `great-emili-educonnect-56088bf2.koyeb.app/asesores/${idAsesor}/horario`,
+        `https://great-emili-educonnect-56088bf2.koyeb.app/asesores/${idAsesor}/horario`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ function Disponibilidad() {
   const sendHorarios = async (nuevo) => {
     try {
       await axios.put(
-        `great-emili-educonnect-56088bf2.koyeb.app/asesores/${idAsesor}/horario`,
+        `https://great-emili-educonnect-56088bf2.koyeb.app/asesores/${idAsesor}/horario`,
         nuevo,
         {
           headers: {

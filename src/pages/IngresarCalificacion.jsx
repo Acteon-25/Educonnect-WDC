@@ -27,7 +27,7 @@ function CalificarEstudiante() {
 
     try {
       await axios.post(
-        `great-emili-educonnect-56088bf2.koyeb.app/asesores/${idSesion}/calificaciones`, enviarCalificacion,
+        `https://great-emili-educonnect-56088bf2.koyeb.app/asesores/${idSesion}/calificaciones`, enviarCalificacion,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -54,7 +54,7 @@ function CalificarEstudiante() {
     const getUsuarios = async () => {
       try {
         const response = await axios.get(
-          `great-emili-educonnect-56088bf2.koyeb.app/asesores/${id}/sesiones`,
+          `https://great-emili-educonnect-56088bf2.koyeb.app/asesores/${id}/sesiones`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

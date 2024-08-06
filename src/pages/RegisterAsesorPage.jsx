@@ -30,7 +30,7 @@ const RegisterAsesorPage = () => {
     formData.append('archivo', file);
 
     try {
-      const response = await axios.post('great-emili-educonnect-56088bf2.koyeb.app/registro/asesor', formData,
+      const response = await axios.post('https://great-emili-educonnect-56088bf2.koyeb.app/registro/asesor', formData,
         {
           headers: {
             'Content-Type': 'multipart/form-data',

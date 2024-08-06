@@ -9,7 +9,7 @@ function PerfilAsesor() {
   const [formData, setFormData] = useState({})
 
   const handleClickDelete = () => {
-    axios.delete("great-emili-educonnect-56088bf2.koyeb.app/membresias/cancelar", {
+    axios.delete("https://great-emili-educonnect-56088bf2.koyeb.app/membresias/cancelar", {
       headers: {
         'Authorization': `Bearer ${tokenCancelar}`
       }
@@ -25,7 +25,7 @@ function PerfilAsesor() {
           throw new Error('No hay token disponible');
         }
 
-        const response = await axios.get('great-emili-educonnect-56088bf2.koyeb.app/asesores/perfil', {
+        const response = await axios.get('https://great-emili-educonnect-56088bf2.koyeb.app/asesores/perfil', {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -55,7 +55,7 @@ function PerfilAsesor() {
     event.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.put('great-emili-educonnect-56088bf2.koyeb.app/asesores/actualizar', formData, {
+      await axios.put('https://great-emili-educonnect-56088bf2.koyeb.app/asesores/actualizar', formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }

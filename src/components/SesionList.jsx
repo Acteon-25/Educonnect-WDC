@@ -11,7 +11,7 @@ function SesionList() {
     const fetchAsesores = async () => {
 
       try {
-        const response = await axios.get(`great-emili-educonnect-56088bf2.koyeb.app/asesores/${id}/sesiones`, {
+        const response = await axios.get(`https://great-emili-educonnect-56088bf2.koyeb.app/asesores/${id}/sesiones`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },

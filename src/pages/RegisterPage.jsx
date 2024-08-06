@@ -20,7 +20,7 @@ const RegisterPage = () => {
         correoElectronico: email,
         contrasena: contrasena,
       };
-      const response = await axios.post('great-emili-educonnect-56088bf2.koyeb.app/registro/estudiante', nuevoEstudiante);
+      const response = await axios.post('https://great-emili-educonnect-56088bf2.koyeb.app/registro/estudiante', nuevoEstudiante);
       localStorage.setItem('token', response.data.tokenTemporal);
       navigate('/pricing/')
     } catch (e) {

@@ -19,13 +19,13 @@ const LoginPage = () => {
         contrasena: contrasena,
       }
 
-      const response = await axios.post('great-emili-educonnect-56088bf2.koyeb.app/login', details);
+      const response = await axios.post('https://great-emili-educonnect-56088bf2.koyeb.app/login', details);
       const token = response.data.token;
       const tipoUsuario = response.data.tipoUsuario;
       localStorage.setItem('token', token);
 
       if (tipoUsuario == "ESTUDIANTE") {
-        const resEstudiante = await axios.get("great-emili-educonnect-56088bf2.koyeb.app/estudiantes/perfil", {
+        const resEstudiante = await axios.get("https://great-emili-educonnect-56088bf2.koyeb.app/estudiantes/perfil", {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -39,7 +39,7 @@ const LoginPage = () => {
 
       } else if (tipoUsuario == "ASESOR") {
 
-        const resAsesor = await axios.get("great-emili-educonnect-56088bf2.koyeb.app/asesores/perfil", {
+        const resAsesor = await axios.get("https://great-emili-educonnect-56088bf2.koyeb.app/asesores/perfil", {
           headers: {
             'Authorization': `Bearer ${token}`
           }
