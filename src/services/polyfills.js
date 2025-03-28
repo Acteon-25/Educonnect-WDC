@@ -3,4 +3,6 @@ if (typeof global === 'undefined') {
 }
 
 
+console.log("Refactor polyfiils");
+
 
