@@ -70,3 +70,5 @@ const notificationService = {
 };
 
 export default notificationService;
+
+console.log("Notification service");
